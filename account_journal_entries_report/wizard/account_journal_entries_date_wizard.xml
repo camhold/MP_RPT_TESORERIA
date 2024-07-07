@@ -1,0 +1,29 @@
+<odoo>
+
+    <record id="view_date_wizard_account_journal_form" model="ir.ui.view">
+        <field name="name">view.date.wizard.account.journal.form</field>
+        <field name="model">account.journal.entries.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Seleccionar fechas a mostrar en el libro">
+                <group class="col-4">
+                    <field name="initial_date"/>
+                    <field name="final_date"/>
+                </group>
+                <footer>
+                    <button string="Confirmar" name="action_confirm"  type="object" class="btn-primary"/>
+                    <button string="Cancelar" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_date_journal_entries_wizard" model="ir.actions.act_window">
+        <field name="name">Libro de diario</field>
+        <field name="res_model">account.journal.entries.wizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_date_wizard_account_journal_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem id="menu_account_move_journal_report"
+              action="action_date_journal_entries_wizard"
+              parent="account.menu_finance_entries_accounting_ledgers"
+              groups="account.group_account_readonly"
+              sequence="5"
+    />
+
+</odoo>

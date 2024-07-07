@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <menuitem id="menu_account_moves_partner_invoice"
+              action="action_open_date_wizard_supplier"
+              parent="account.menu_finance_entries_accounting_ledgers"
+              groups="account.group_account_readonly"
+              sequence="4"
+    />
+
+</odoo>
